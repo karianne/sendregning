@@ -47,7 +47,7 @@ module Sendregning
         res = http.start{|http| http.request(request)}
 
         # Parse the response
-        response = Response.new(res, self.class.parser.call(res.body, :xml))
+        response = Response.new(request, res, lambda { Parser.new(res.body, :xml).parse })
       end
     
       # Returns a list of recipients

@@ -9,8 +9,8 @@ begin
     gem.description = "Ruby client for the SendRegning Web Service"
     gem.email = "inge@manualdesign.no"
     gem.homepage = "http://github.com/elektronaut/sendregning"
-    gem.authors = ["Inge Jørgensen"]
-    gem.add_dependency "httparty", ">= 0.6.1"
+    gem.authors = ["Inge Jorgensen"]
+    gem.add_dependency "httparty", ">= 0.9.0"
     gem.add_dependency "builder", ">= 2.1.2"
     gem.add_dependency "multipart-post", ">= 1.0.1"
     #gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
